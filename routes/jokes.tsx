@@ -1,9 +1,10 @@
 // routes/jokes.tsx
+import { handler as getJokes } from "./api/joke.ts";
 import { Handlers } from "$fresh/server.ts";
 
 export const handler: Handlers = {
   async GET(_, ctx) {
-    const resp = await fetch('https://kondoumh-my-fresh-app.deno.dev/api/joke');
+    const resp = getJokes();
     const joke = await resp.text();
     return ctx.render(joke);
   },
