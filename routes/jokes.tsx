@@ -3,7 +3,7 @@ import { Handlers } from "$fresh/server.ts";
 
 export const handler: Handlers = {
   async GET(_, ctx) {
-    const resp = await fetch('./api/joke');
+    const resp = await fetch('/api/joke');
     const joke = await resp.text();
     return ctx.render(joke);
   },
