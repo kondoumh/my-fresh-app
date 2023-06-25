@@ -7,9 +7,11 @@ import * as $1 from "./routes/api/joke.ts";
 import * as $2 from "./routes/chart.tsx";
 import * as $3 from "./routes/chart_image.tsx";
 import * as $4 from "./routes/chart_render.ts";
-import * as $5 from "./routes/index.tsx";
-import * as $6 from "./routes/jokes.tsx";
-import * as $$0 from "./islands/Counter.tsx";
+import * as $5 from "./routes/countdown.tsx";
+import * as $6 from "./routes/index.tsx";
+import * as $7 from "./routes/jokes.tsx";
+import * as $$0 from "./islands/Countdown.tsx";
+import * as $$1 from "./islands/Counter.tsx";
 
 const manifest = {
   routes: {
@@ -18,11 +20,13 @@ const manifest = {
     "./routes/chart.tsx": $2,
     "./routes/chart_image.tsx": $3,
     "./routes/chart_render.ts": $4,
-    "./routes/index.tsx": $5,
-    "./routes/jokes.tsx": $6,
+    "./routes/countdown.tsx": $5,
+    "./routes/index.tsx": $6,
+    "./routes/jokes.tsx": $7,
   },
   islands: {
-    "./islands/Counter.tsx": $$0,
+    "./islands/Countdown.tsx": $$0,
+    "./islands/Counter.tsx": $$1,
   },
   baseUrl: import.meta.url,
 };
